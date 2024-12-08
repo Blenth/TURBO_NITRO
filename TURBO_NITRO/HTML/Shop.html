@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Turbo Nitro</title>
+    
+    <link  href="../Images/logo.webp" type="image/x-icon">
+
+    <!--=== Estilos ===-->
+    <link rel="stylesheet" href="../CSS/Base.css">
+    <link rel="stylesheet" href="../CSS/Pages/Shop.css">
+
+    <link rel="stylesheet" href="../CSS/Sections/Main.css">
+    <link rel="stylesheet" href="../CSS/Sections/Header.css">
+    <link rel="stylesheet" href="../CSS/Sections/Footer.css">
+    <link rel="stylesheet" href="../CSS/Sections/Navbar.css">
+    <link rel="stylesheet" href="../CSS/Classes/Framework.css">
+
+   
+</head>
+
+<body>
+    <!--=== Navigation Bar ===-->
+    <nav class="nav">
+        <div class="nav-logo flex">
+            <img src="../Images/logo.webp" width="70px" height="70px">
+            <h1>Turbo Nitro</h1> 
+        </div>
+
+        <div class="nav-list flex">
+            <a class="nav-item-1" href="../index.html"><span>Inicil</span></a> 
+            <a class="nav-item-2" href="../HTML/Shop.html"><span>Loja</span></a>
+           
+        </div>
+
+        <div class="flex">
+            <a href="../HTML/Login.html" class="nav-btn btn-login flex">
+                <img src="../Images/login.webp" width="20px" height="20px">
+                <span>Login</span>
+            </a>
+            
+        </div>
+    </nav>
+
+   
+
+    <!--=== Barra Audio ===-->
+    <header class="header header-text">
+        <h1>Loja</h1>
+        <span>Bem vindo a nossa Loja</span>
+    </header>
+
+    <script>
+        function playAudioT() {
+            let x = document.getElementById("myAudioT");
+            x.play();
+        }
+        function playAudioS() {
+            let x = document.getElementById("myAudioS");
+            x.play();
+        }
+        function playAudioP() {
+            let x = document.getElementById("myAudioP");
+            x.play();
+        }
+
+        function playAudioN() {
+            let x = document.getElementById("myAudioN");
+            x.play();
+        }
+        
+               
+    </script>
+
+    <!--=== Conteudo Principal ===-->
+    <main class="main">
+        <div class="container">
+            <div class="main-title flex">
+                <img src="../Images/products.webp" >
+                <h1 class="m-desktop-title">Produtos</h1>
+                
+            </div>
+            
+            <div class="cards">
+                <div class="card">
+                    <img src="../Images/Turbo.webp" >
+
+                    <div class="card-content">
+                        <h2>Turbo Charge</h2>
+                        <p>USD 4.500</p>
+                    </div>
+
+                    <a class="btn btn-dark" onclick="playAudioT()" id="buy-item-1">Sinfonia </a>
+                    <a class="btn btn-primary" id="open-popup-1" >Selecionar</a>
+
+                    <audio id="myAudioT" >
+                        <source src="../Audios/Turbo.m4a" type="audio/mpeg">
+                    </audio>
+
+                </div>
+              
+    
+                <div class="card">
+                    <img src="../Images/SuperCharge.webp" >
+
+                    <div class="card-content">
+                        <h2>Super Charge</h2>
+                        <p>USD 3.800</p>
+                    </div>
+
+                    <a class="btn btn-dark" onclick="playAudioS()" >Sinfonia </a>
+                    <a class="btn btn-sucess" id="open-popup-2" >Selecionar</a>
+
+                    <audio id="myAudioS" >
+                        <source src="../Audios/Procharge.m4a" type="audio/mpeg">
+                    </audio>      
+
+                </div>
+    
+                <div class="card">
+                    <img src="../Images/ProCharge.webp" alt="Image of gold VIP">
+
+                    <div class="card-content">
+                        <h2>Pro Charger</h2>
+                        <p>USD 6.700</p>
+                    </div>
+
+                    <a class="btn btn-dark" onclick="playAudioP()" id="buy-item-3">Sinfonia </a>
+                    <a class="btn btn-alert" id="open-popup-3" >Selecionar</a>    
+                    
+                    <audio id="myAudioP" >
+                        <source src="../Audios/SuperCharge.m4a" type="audio/mpeg">
+                    </audio>
+
+                </div>
+                      
+                <div class="card card-cosmetics">
+                    <img src="../Images/NitroMetano.webp" alt="Image of cosmetics">
+                    
+                    <div class="card-content">
+                        <h2>Nitro Oxido Nitroso</h2>
+                        <p>USD 8.000</p>
+                    </div>
+                    
+                    <a class="btn btn-dark" onclick="playAudioN()" >Sinfonia</a>
+                    <a class="btn btn-outline" >Selecionar</a>
+                    <audio id="myAudioN" >
+                        <source src="../Audios/Nitro.m4a" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+
+    <!--=== Base ===-->
+    <footer class="footer">
+        <div class="footer-container flex">
+            <div class="footer-credits">
+                <div class="footer-credits-photo flex">
+                    <a class="flex">
+                        <img class="f-h" src="../Images/JG_Blenth.webp" width="50px" height="50px">
+                        <h2>TK BlenTh</h2>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-items">
+                <span class="sp-1">©2024 Turbo Nitro | Quase Tudo em um so lugar.</span>
+                <span class="sp-2">Qualquer duvidas não fale conosco.</span>
+                <span class="sp-3">Trasparencia total</span>
+            </div>
+    
+            <div class="footer-socials flex">
+                
+                <a href="https://www.youtube.com/@FuelTechOficial" ><img class="yt-social" src="../Images/youtube.webp" width="40px" height="40px"></a>
+            </div>
+        </div>
+    </footer>
+
+   
+ 
+
+    <script src="../JS/Função_Tabela.js"></script> //AS APIS SÃO PAGAS POR ISSO OS ARQUIVOS JS NÃO ESTÃO NO PROJETO.
+    <script src="../JS/Coletor_Api.js"></script>
+</body>
+</html>
